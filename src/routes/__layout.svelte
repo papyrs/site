@@ -9,6 +9,12 @@
   import '$lib/themes/variables.scss';
 
   import '$lib/themes/site.scss';
+
+  import Seo from '$lib/components/Seo.svelte';
 </script>
+
+<svelte:head>
+  <Seo />
+</svelte:head>
 
 <slot />
