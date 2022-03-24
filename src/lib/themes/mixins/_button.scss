@@ -1,0 +1,114 @@
+@use "./shadow";
+@use "./text";
+
+@mixin primary {
+  outline: 0;
+  cursor: pointer;
+
+  user-select: none;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0.45rem 0;
+  padding: 0.45rem;
+
+  width: fit-content;
+  height: fit-content;
+
+  text-decoration: none;
+
+  transition: color 0.15s ease-out, background 0.15s ease-out, transform 0.15s ease-out,
+    box-shadow 0.15s ease-out, border 0.15s ease-out;
+
+  @include shadow.strong;
+
+  &:disabled {
+    box-shadow: 3px 3px rgb(0, 0, 0, 0.4);
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    color: rgb(0, 0, 0, 0.4);
+    pointer-events: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translateX(3px) translateY(3px);
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    background: rgba(var(--color-primary-rgb), 0.4);
+    color: var(--color-primary-contrast);
+  }
+}
+
+@mixin menu {
+  width: 100%;
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  justify-content: flex-start;
+  padding: 0.25rem 0.75rem;
+
+  svg {
+    margin: 0 0.75rem 0 0;
+    border: 1px solid var(--color-primary);
+    padding: 0.45rem;
+    width: 2.45rem;
+    height: 2.45rem;
+    background: white;
+  }
+}
+
+@mixin icon {
+  box-shadow: none;
+  border: none;
+  background: inherit;
+  margin: 0;
+}
+
+@mixin toolbar {
+  display: flex;
+  flex-direction: column;
+
+  width: 3.25rem;
+  height: 3.25rem;
+  margin: 0.45rem 0.15rem;
+  padding: 0 0.15rem;
+
+  font-size: var(--font-size-very-small);
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    background: var(--color-primary-opaque);
+    color: var(--color-primary-opaque-contrast);
+  }
+
+  span {
+    width: 100%;
+    @include text.truncate;
+  }
+}
+
+@mixin text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0;
+  margin: var(--padding);
+
+  box-shadow: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--button-text-color, inherit);
+
+  &:hover,
+  &:focus {
+    color: var(--button-text-color, inherit);
+    background: transparent;
+    border-bottom: 1px solid var(--button-text-color, inherit);
+  }
+}
