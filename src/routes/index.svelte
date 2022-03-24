@@ -32,11 +32,22 @@
     @include shadow.strong;
 
     padding: 1.75rem;
+
+    width: calc(640px - (2 * 0.75rem));
+    max-width: calc(100vw - (2 * 0.75rem));
   }
 
   h1 {
     font-size: 4rem;
     letter-spacing: -0.036em;
-    line-height: 1;
+    line-height: 0.75;
+
+    background-image: linear-gradient(120deg, var(--color-primary-opaque) 25%, var(--site-background) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.75rem;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+
+    margin-bottom: 1.25rem;
   }
 </style>
