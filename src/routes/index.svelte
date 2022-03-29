@@ -8,7 +8,7 @@
     <h1>Blog on web3</h1>
 
     <p>
-      A new decentralized way of blogging that lives entirely on chain. Your voice is unstoppable,
+      A new decentralized way of blogging that lives 100% on chain. Your voice is unstoppable,
       your data are your own.
     </p>
 
@@ -41,15 +41,6 @@
     font-size: 4rem;
     letter-spacing: -0.036em;
     line-height: 0.75;
-
-    background-image: linear-gradient(
-      120deg,
-      var(--site-background) 0%,
-      var(--color-highlight) 100%
-    );
-    background-repeat: no-repeat;
-    background-size: 100% 0.45rem;
-    background-position: 0 100%;
 
     margin-bottom: 1.45rem;
   }
