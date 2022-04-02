@@ -6,9 +6,8 @@
   import '$lib/themes/button.scss';
   import '$lib/themes/link.scss';
   import '$lib/themes/input.scss';
+  import '$lib/themes/body.scss';
   import '$lib/themes/variables.scss';
-
-  import '$lib/themes/site.scss';
 
   import Seo from '$lib/components/Seo.svelte';
 </script>

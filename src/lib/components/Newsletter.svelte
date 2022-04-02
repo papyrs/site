@@ -32,8 +32,7 @@
       display: grid;
       align-items: center;
 
-      --grid-width: calc(100% - 0.45rem);
-      grid-template-columns: calc(var(--grid-width) * 0.8) calc(var(--grid-width) * 0.2);
+      grid-template-columns: repeat(2, auto);
       grid-gap: 0.45rem;
     }
   }
@@ -43,5 +42,9 @@
     height: 45px;
     margin: 0.45rem 0;
     padding: 0.45rem;
+  }
+
+  button {
+    min-width: 8rem;
   }
 </style>

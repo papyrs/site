@@ -40,7 +40,7 @@
   h1 {
     font-size: 4rem;
     letter-spacing: -0.036em;
-    line-height: 0.75;
+    line-height: 1;
 
     margin-bottom: 1.45rem;
   }
