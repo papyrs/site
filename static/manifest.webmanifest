@@ -2,8 +2,8 @@
   "name": "Papyrs",
   "short_name": "Papyrs",
   "start_url": "/",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "display": "standalone",
   "icons": [
     {"src": "icons/icon-48x48.png", "sizes": "48x48", "type": "image/png", "purpose": "any"},
