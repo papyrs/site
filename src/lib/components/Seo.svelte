@@ -1,6 +1,6 @@
 <script lang="ts">
   let defaultUrl = 'https://papy.rs';
-  let defaultImage = `${defaultUrl}/images/social-image.jpg`;
+  let defaultImage = `${defaultUrl}/images/social-image.jpg?123`;
   let defaultTitle = 'Papyrs';
   let defaultDescription = 'Blog on web3';
 
