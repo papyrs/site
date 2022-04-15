@@ -8,12 +8,6 @@
   import '$lib/themes/input.scss';
   import '$lib/themes/body.scss';
   import '$lib/themes/variables.scss';
-
-  import Seo from '$lib/components/Seo.svelte';
 </script>
-
-<svelte:head>
-  <Seo />
-</svelte:head>
 
 <slot />
