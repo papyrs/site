@@ -1,5 +1,4 @@
 <script>
-  import Newsletter from '../lib/components/Newsletter.svelte';
   import Social from '../lib/components/Social.svelte';
 </script>
 
@@ -8,11 +7,15 @@
     <h1>Blog on web3</h1>
 
     <p>
-      A new decentralized way of blogging that lives 100% on chain. Your voice is unstoppable,
-      your data are your own.
+      A new decentralized way of blogging that lives 100% on chain. Your voice is unstoppable, your
+      data are your own.
     </p>
 
-    <Newsletter />
+    <p>
+      Reach out on <a href="https://discord.gg/EV76WqDuZW" rel="noopener norefferer">Discord</a>
+      or <a href="https://twitter.com/PapyrsApp/" rel="noopener norefferer">Twitter</a> to join the beta
+      program. We are almost ready to launch!
+    </p>
   </article>
 
   <Social />
