@@ -64,6 +64,7 @@
     @include button.primary;
 
     padding: 0.45rem 1rem;
+    z-index: 1;
   }
 
   p {
