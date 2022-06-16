@@ -4,25 +4,22 @@
 
 <main>
   <article>
-    <h1>Blog on web3</h1>
+    <h1><span>Blog on web3</span><span>&nbsp;with Papyrs</span></h1>
 
     <p>
-      A new decentralized way of blogging that lives 100% on chain. Your voice is unstoppable, your
-      data are your own.
-    </p>
-
-    <p>
-      Reach out on <a href="https://discord.gg/EV76WqDuZW" rel="noopener norefferer">Discord</a>
-      or <a href="https://twitter.com/PapyrsApp/" rel="noopener norefferer">Twitter</a> to join the beta
-      program. We are almost ready to launch!
+      An open-source, privacy-first, decentralized blogging platform that lives 100% on chain. Your
+      voice is unstoppable, your data are your own.
     </p>
   </article>
 
-  <Social />
+  <a href="https://app.papy.rs" rel="external noopener norefferer">Write post</a>
 </main>
+
+<Social />
 
 <style lang="scss">
   @use '../lib/themes/mixins/shadow';
+  @use '../lib/themes/mixins/button';
 
   main {
     display: flex;
@@ -34,9 +31,7 @@
   }
 
   article {
-    @include shadow.strong;
-
-    padding: 2.75rem 1.75rem 1rem;
+    padding: 0 1.75rem 1rem;
 
     width: calc(640px - (2 * 0.75rem));
     max-width: calc(100vw - (2 * 0.75rem));
@@ -45,8 +40,27 @@
   h1 {
     font-size: 4rem;
     letter-spacing: -0.036em;
-    line-height: 1;
+    line-height: 0.2;
 
     margin-bottom: 1.45rem;
+
+    span:first-of-type {
+      line-height: 1;
+    }
+
+    span:last-of-type {
+      font-size: initial;
+      letter-spacing: -0.036em;
+    }
+  }
+
+  a {
+    @include button.primary;
+
+    padding: 0.45rem 1rem;
+  }
+
+  p {
+    margin-bottom: 0;
   }
 </style>
