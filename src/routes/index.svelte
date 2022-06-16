@@ -21,6 +21,12 @@
   @use '../lib/themes/mixins/shadow';
   @use '../lib/themes/mixins/button';
 
+  :global(body > div) {
+    @supports (-webkit-touch-callout: none) {
+      height: -webkit-fill-available;
+    }
+  }
+
   main {
     display: flex;
     flex-direction: column;
