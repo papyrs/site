@@ -18,8 +18,8 @@
 <Social />
 
 <style lang="scss">
-  @use '../lib/themes/mixins/shadow';
-  @use '../lib/themes/mixins/button';
+  @use '@papyrs/ui/styles/mixins/shadow';
+  @use '@papyrs/ui/styles/mixins/button';
 
   :global(body > div) {
     @supports (-webkit-touch-callout: none) {

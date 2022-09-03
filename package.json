@@ -45,5 +45,8 @@
   },
   "bugs": {
     "url": "https://github.com/papyrs/site/issues"
+  },
+  "dependencies": {
+    "@papyrs/ui": "^0.0.1"
   }
 }
