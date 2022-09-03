@@ -1,5 +1,5 @@
 <script>
-  import Social from '../lib/components/Social.svelte';
+  import Social from '$lib/components/Social.svelte';
 </script>
 
 <main>
