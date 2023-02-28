@@ -17,6 +17,8 @@
     "sync:scss": "node copy-scss.mjs"
   },
   "devDependencies": {
+    "@sveltejs/adapter-static": "^2.0.1",
+    "@sveltejs/kit": "^1.9.0",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.35.0",
@@ -45,8 +47,6 @@
     "url": "https://github.com/papyrs/site/issues"
   },
   "dependencies": {
-    "@papyrs/ui": "^0.0.11",
-    "@sveltejs/adapter-static": "^2.0.1",
-    "@sveltejs/kit": "^1.9.0"
+    "@papyrs/ui": "^0.0.11"
   }
 }
