@@ -17,22 +17,20 @@
     "sync:scss": "node copy-scss.mjs"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.41",
-    "@sveltejs/kit": "^1.0.0-next.465",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
-    "eslint": "^8.23.0",
-    "eslint-config-prettier": "^8.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-svelte3": "^4.0.0",
-    "prettier": "^2.7.1",
-    "prettier-plugin-svelte": "^2.7.0",
-    "sass": "^1.54.8",
-    "svelte": "^3.50.0",
-    "svelte-check": "^2.9.0",
-    "svelte-preprocess": "^4.10.7",
-    "tslib": "^2.4.0",
-    "typescript": "~4.8.2",
-    "vite": "^3.1.0-beta.2"
+    "prettier": "^2.8.4",
+    "prettier-plugin-svelte": "^2.9.0",
+    "sass": "^1.58.3",
+    "svelte": "^3.55.1",
+    "svelte-check": "^3.0.4",
+    "svelte-preprocess": "^5.0.1",
+    "tslib": "^2.5.0",
+    "typescript": "~4.9.5",
+    "vite": "^4.1.4"
   },
   "keywords": [
     "blog",
@@ -47,6 +45,8 @@
     "url": "https://github.com/papyrs/site/issues"
   },
   "dependencies": {
-    "@papyrs/ui": "^0.0.1"
+    "@papyrs/ui": "^0.0.11",
+    "@sveltejs/adapter-static": "^2.0.1",
+    "@sveltejs/kit": "^1.9.0"
   }
 }
